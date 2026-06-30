@@ -2140,7 +2140,94 @@ body.modal-open {
   }
 }
 
-.offline-section .hero-motto {
+.offline-section .hero-motto,
+.online-section .hero-motto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.online-section {
+  background: #f8f2ef;
+}
+
+.online-intro {
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+.online-box {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+}
+
+.online-column {
+  background: #fff;
+  padding: 42px;
+  border: 1px solid rgba(168, 108, 115, 0.18);
+  box-shadow: 0 20px 60px rgba(92, 67, 56, 0.08);
+}
+
+.online-column h3 {
+  font-family: var(--font-title);
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.online-column ul {
+  display: grid;
+  gap: 14px;
+}
+
+.online-column li {
+  position: relative;
+  padding-left: 22px;
+  line-height: 1.6;
+}
+
+.online-column li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
+}
+
+.online-column p {
+  font-size: 18px;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.online-column p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .online-box {
+    grid-template-columns: 1fr;
+  }
+
+  .online-box {
+    margin-top: 0;
+    gap: 20px;
+  }
+
+  .online-column {
+    padding: 30px 24px;
+  }
+
+  .online-column h3 {
+    font-size: 28px;
+  }
+
+  .online-column p,
+  .online-column li {
+    font-size: 16px;
+  }
 }
