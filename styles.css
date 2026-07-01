@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap");
 
-
 :root {
   --accent: #a86c73;
   --text: #4a403d;
@@ -2294,7 +2293,7 @@ body.modal-open {
     width: 56px;
     height: 56px;
     right: 18px;
-    bottom: 18px;
+    bottom: 50px;
     font-size: 24px;
   }
 }
