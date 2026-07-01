@@ -902,14 +902,33 @@
         </div>
 
         <div class="contact-form-wrap">
-          <form class="contact-form">
-            <input type="text" placeholder="Ваше ім'я" />
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/oksanahordiienko@ukr.net"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Нова заявка з сайту Оксани Гордієнко"
+            />
 
-            <input type="tel" placeholder="Телефон" />
+            <input type="hidden" name="_captcha" value="false" />
 
-            <textarea placeholder="Коротко опишіть ваш запит"></textarea>
+            <input type="hidden" name="_template" value="table" />
 
-            <button class="btn btn-light">Надіслати заявку</button>
+            <input type="text" name="name" placeholder="Ваше ім'я" required />
+
+            <input type="tel" name="phone" placeholder="Телефон" required />
+
+            <textarea
+              name="message"
+              placeholder="Коротко опишіть ваш запит"
+            ></textarea>
+
+            <button type="submit" class="btn btn-light">
+              Надіслати заявку
+            </button>
           </form>
         </div>
       </div>
