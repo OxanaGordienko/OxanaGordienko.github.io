@@ -2231,3 +2231,69 @@ body.modal-open {
     font-size: 16px;
   }
 }
+
+.telegram-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--accent);
+  color: #fff;
+
+  border-radius: 50%;
+  text-decoration: none;
+
+  font-size: 28px;
+
+  box-shadow: 0 15px 40px rgba(168, 108, 115, 0.35);
+
+  z-index: 9999;
+
+  transition: 0.35s ease;
+  animation: telegramPulse 2.8s infinite;
+}
+
+.telegram-float:hover {
+  background: var(--chocolate);
+  transform: translateY(-5px) scale(1.08);
+  box-shadow: 0 22px 55px rgba(92, 67, 56, 0.35);
+}
+
+.telegram-float i {
+  transition: transform 0.35s ease;
+}
+
+.telegram-float:hover i {
+  transform: rotate(-10deg);
+}
+
+@keyframes telegramPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(168, 108, 115, 0.45);
+  }
+
+  70% {
+    box-shadow: 0 0 0 18px rgba(168, 108, 115, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(168, 108, 115, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .telegram-float {
+    width: 56px;
+    height: 56px;
+    right: 18px;
+    bottom: 18px;
+    font-size: 24px;
+  }
+}
